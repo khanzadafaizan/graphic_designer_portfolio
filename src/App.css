@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+.bg-color{
+  background-color: rgb(230,218,206);
+
+}
+.col_left{
+  /* position: relative; */
+  height: 120vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile_row{
+  margin-right: 0% !important;
+  position: relative;
+  right: 280px;
+  /* top: 50px; */
+  /* top: 120px; */
+  /* box-shadow: 0px 0px 5px 5px #f0eeee; */
 }
+.about_me{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: rgb(244,236,230);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-profile {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.user-profile img {
+  width: 125%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  padding-top: 30px;
+  background-color: rgb(230,218,206);
+
+}
+.link{
+  text-decoration: none;
+}
+.navbar-nav a{
+ color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-nav a:hover{
+  color: black;
+
+}
+
+.nav-link.active{
+  font-weight: 600 !important;
+  color: black;
+  border-bottom: 2px solid black;
+  border-color: 2px solid black;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: black !important;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  border-color: 2px solid black;
+  background-color: white !important;
+  font-weight: 600 !important;
+}
+.dropdown-item.active, .dropdown-item:active :hover {
+  color: black !important;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: white !important; 
+}
+.contact{
+  transform: translateY(0);
+  transition: transform 10s ease; /* Adjust the duration (10s) for a slower transition */
+  background-color: black !important;
+}
+
+.contact:hover {
+  transform: translateY(100%);
+}
+
+.hr{
+  width: 100px;
+  border: 2px solid blue; 
+  margin: auto;
+}
+
+.about_grap{
+  /* line-height: 31px !important; */
+  font-family:'Courier New', Courier, monospace;
+}
+
+.hover-icon {
+  color: black;
+}
+
+.hover-icon:hover {
+  font-size: 28px;
+}
+
+.text_hello{
+  font-size: 88px !important;
+  font-weight: 700;
+  
+}
+
+.carousel{
+  width: 80% !important;
+  margin-left:10% !important ;
+  height: auto;
+  
+}
+.carousel_Img{
+  width: 50% !important;
+  height: auto;
+  padding-bottom: 10% !important;
+  margin-left:25% !important ;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+  .col_left{
+    background-color: rgb(230,218,206);
+    height: 0vh;
   }
-  to {
-    transform: rotate(360deg);
+  .profile_row{
+    margin-right: 0% !important;
+    position: static;
+    box-shadow: 0px 0px 5px 5px #f0eeee;
   }
 }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col_left{
+    background-color: rgb(230,218,206);
+    height: 85vh;
+  }
+  .profile_row{
+    margin-right: 0% !important;
+    position: relative;
+    right: 130px;
+    top: 75px;
+    height: 100%;
+
+  }
+  .designer{
+    font-size: xx-large !important;
+   }
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-profile img {
+  width: 125%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  padding-top: 30px;
+  background-color: rgb(230,218,206);
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col_left{
+    background-color: rgb(230,218,206);
+    position: relative;
+    height: 85vh;
+  }
+  .profile_row{
+    margin-right: 0% !important;
+    position: relative;
+    right: 170px; 
+    top: 50px;
+    height: 100%;
+
+  }
+  .designer{
+   font-size: xx-large !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .col_left{
+    background-color: rgb(230,218,206);
+    position: relative;
+    height: 130vh;  
+  }
+  .profile_row{
+    margin-right: 0% !important;
+    position: relative;
+    right: 170px; 
+    top: 100px;
+    height: 100%;
+  }
+}
+
