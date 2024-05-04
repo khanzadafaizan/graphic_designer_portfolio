@@ -5,6 +5,7 @@ import { Card } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 function LogoData(props) {
+  
   const handleClick = () => {
     props.handleImageClick(props.index); // Pass the index of the clicked image
   };
