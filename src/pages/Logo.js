@@ -1,11 +1,8 @@
-// Logo.js
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { imageData } from '../data/imageData';
 import LogoData from '../components/LogoData';
 import ImageCarousel from '../components/ImageCarousel';
-
+import {imageData} from"../data/imageData"
 function Logo() {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 

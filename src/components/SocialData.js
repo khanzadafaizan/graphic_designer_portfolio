@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const SocialData = (props) => {
   const handleClick = () => {
-    props.handleImageClick(props.index); // Pass the index of the clicked image
+    props.handleImageClick(props.index);
   };
   return (
     <Card style={{ width: "26rem" }} className='border-0'>

@@ -15,7 +15,7 @@ function About() {
               <Col xs={12} sm={12} md={5} lg={5} className="about_me px-0 py-5 m-0">
                 <div>
                   <div className="user-profile m-auto mt-4">
-                    <img src={profile} />
+                    <img src={profile}/>
                   </div>
                   <h2 className="text-center py-3">Amaan Khanzada</h2>
                   <hr className="hr" />

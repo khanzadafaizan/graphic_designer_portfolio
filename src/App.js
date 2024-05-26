@@ -13,7 +13,9 @@ import Contact from './pages/Contact';
 const Logo = lazy(() => import("./pages/Logo"));
 const Social_media = lazy (() => import("./pages/Social_media") )
 const Videos = lazy (() => import("./pages/Videos"))
+
 function App() {
+
   return (
     <>
     <BrowserRouter>
