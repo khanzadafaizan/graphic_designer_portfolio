@@ -1,10 +1,9 @@
 import React from "react";
-import { Col, Container, NavLink, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import profile from "../image/profile.png";
 import { Link } from "react-router-dom";
 import SocialIcons from "../components/SocialIcons";
 function About() {
-  
   return (
     <>
       <Container fluid>
@@ -12,10 +11,16 @@ function About() {
           <Col md={5} className="col_left bg-color"></Col>
           <Col md={7} className="profile_row ">
             <Row className=" p-0 m-0">
-              <Col xs={12} sm={12} md={5} lg={5} className="about_me px-0 py-5 m-0">
+              <Col
+                xs={12}
+                sm={12}
+                md={5}
+                lg={5}
+                className="about_me px-0 py-5 m-0"
+              >
                 <div>
                   <div className="user-profile m-auto mt-4">
-                    <img src={profile}/>
+                    <img src={profile} alt="profile" />
                   </div>
                   <h2 className="text-center py-3">Amaan Khanzada</h2>
                   <hr className="hr" />
@@ -24,7 +29,7 @@ function About() {
                   </h5>
                 </div>
                 {/* hover, hover-focus, plain-hover-focus, hover-focus-active */}
-                <SocialIcons/>
+                <SocialIcons />
               </Col>
               <Col xs={12} sm={12} md={7} lg={7} className="py-5">
                 <div className="ms-4 pt-5">
