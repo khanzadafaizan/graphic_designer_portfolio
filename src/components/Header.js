@@ -38,15 +38,19 @@ function Header() {
               onSelect={handleProject}
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item as={NavLink} eventKey={"LOGO"} to={"/logslist"}>
-                LOGO
+              <NavDropdown.Item
+                as={NavLink}
+                eventKey={"LOGOS"}
+                to={"/logslist"}
+              >
+                LOGOS
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={NavLink}
-                eventKey={"SOCIAL MIDA"}
+                eventKey={"SOCIAL MEDIA POSTS"}
                 to={"/socialmedia"}
               >
-                SOCIAL MIDA
+                SOCIAL MEDIA POSTS
               </NavDropdown.Item>
               <NavDropdown.Item as={NavLink} eventKey={"VIDEOS"} to={"/videos"}>
                 VIDEOS
